@@ -1,0 +1,1058 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+   
+}
+#main {
+    
+    position: relative;
+    z-index: 10;
+    
+}
+ 
+#page1{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #8ecae6 ;
+    position: relative;
+    padding: 0 2vw;
+}
+  
+
+nav{
+   
+   padding: 2vw 0vw ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    justify-content: space-between;
+
+
+}
+#navlogo{
+    height: 100px;
+    width: 150px;
+}
+#logo{
+    height: 100px;
+    width: 150px;
+    background-size: cover;
+    background-image: url(logo.png);
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+
+}
+#nav-part2 h4{
+    padding: 10px 20px ;
+    border: 1px solid  ;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #fb8500 ;
+    position: relative;
+    font-size: 18px;
+    transition: all ease 0.4s;
+    overflow: hidden;
+
+}
+
+#nav-part2 h4::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #fb8500;
+    left: 0 ;
+    bottom: -100% ;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+   
+
+}
+#nav-part2 h4:hover::after{
+    bottom: 0;
+    border-radius: 0;
+    
+
+}
+#nav-part2 h4 a{
+    color: black;
+    text-decoration: none;
+    z-index: 9;
+    position: relative;
+
+}
+#nav-part2 h4:hover a{
+    color: #fff;
+
+}
+nav h3{
+    display: none;
+}
+#center{
+    height: 65vh ;
+    width: 100%;
+    /*background-color: #fb8500;*/
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid #0000003c ;
+    padding-bottom: 2.5vw ;
+    z-index: +10 ;
+
+}
+#left h3{
+    width: 30vw;
+    font-size: 2vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     line-height: 2vw;
+     color: #023047;
+     text-transform: uppercase;
+}
+#center h1{
+        font-size: 10vw;
+        text-align: right;
+        line-height: 10vw;
+        color: #023047;
+        position: relative ;
+        z-index: +1 ;
+       
+        
+} 
+#page1 video {
+    position: relative;
+    border-radius: 30px;
+    width: 100%;
+   margin-top: 4vw;  
+}
+#hero-shape{
+    position: absolute;
+    width: 46vw ;
+    height: 36vw;
+    background-color: #eae2b7 ;
+    /*background-image: url(mahadev.png);*/
+    /*background-size: cover;*/
+    border-top-left-radius: 50% ;
+    right: 0;
+    top: 65vh;
+    filter: blur(7px);
+    
+}
+#hero1{ 
+    height: 100%;
+    width: 100%;
+    background-image: url(mahadev.png);
+    background-size: cover;
+    filter: blur(3px);
+    position: absolute;
+    animation-name: anime3 ;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+   
+
+}
+#hero2{
+    height: 30vw;
+    width: 30vw;
+    background-image: url(mahadev.png);
+    background-size: cover;
+    filter: blur(6px);
+    position: absolute;
+    animation-name: anime2 ;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+#hero3{
+    height: 35vw;
+    width: 35vw;
+    background-image: url(mahadev.png);
+    background-size: cover;
+    filter: blur(12px);
+    position: absolute;
+    animation-name: anime1 ;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+@keyframes anime1 { 
+    from{
+        transform: translate(55%,-3%);
+    }
+    to{
+        transform: translate(0%,-10%);
+
+    }
+    
+}
+@keyframes anime2 { 
+    from{
+        transform: translate(5%,-5%);
+    }
+    to{
+        transform: translate(-20%,-30%);
+
+    }
+    
+}
+@keyframes anime3 { 
+    from{
+        transform: translate(1%,-5%);
+    }
+    to{
+        transform: translate(-20%,-30%);
+
+    }
+     
+}
+#page2{
+    min-height: 100vh; 
+    width: 100%;
+    background-color: #8ecae6;
+    padding: 8vw 0 ;
+    position: relative;
+}
+#moving-text{
+    overflow-x: auto;
+    white-space: nowrap;
+}
+#moving-text::-webkit-scrollbar{
+    display: none;
+
+}
+.con{
+    
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+
+}
+#moving-text h1{
+    font-size: 10vw;
+    display: inline-block;
+    color: #023047;
+}
+#gola{
+    height: 4vw;
+    width: 4vw;
+    border-radius: 50%;
+    background-color: #ffb703;
+    display: inline-block;
+    margin: 1vw 2vw ;
+
+}
+@keyframes move{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+        
+    }
+    
+}
+#page2-bottom{
+    height: 80vh; 
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vh ;
+    position: relative;
+    z-index: 9;
+}
+
+#img{
+    height: 40%;
+    width: 100%;
+    background-image: url(krishna.jpg);
+    background-size: cover;
+   border-radius: 15px;
+    
+   
+}
+#textp{
+    height: 32vw;
+    width: 21vw;
+    
+    
+}
+#krishna{
+    padding-top: 2vw;
+    font-size: 1.6vw;
+    text-align: left; 
+    font-weight: 300 ;
+}
+#page2-bottom h1 {
+
+    font-size: 2vw;
+    width: 70%;
+    margin-right: 3vh;
+    margin-top: 3vw;
+   
+}
+#bottom-part2 {
+    display: flex;
+    width: 20%;
+}
+#gooey {
+    height: 30vw;
+    width: 30vw;
+    position: absolute ;
+    border-radius: 50%;
+  
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    top: 47%;
+    left: 15%;
+    
+   
+
+}
+
+#gooey2{
+    opacity: 0.5;
+    height: 70%;
+    width: 70%;
+    position: absolute ;
+    border-radius: 50%;
+   background-image: linear-gradient(to top,#ffb703,#d00000 );
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    top: 47%;
+    left: 15%;
+    
+    animation-name: gola ;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite
+
+}
+
+
+
+#gooey1{
+   
+
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    position: absolute ;
+    border-radius: 50%;
+    background-image: url(krishna.png);
+    background-size: cover;
+    top: 12%;
+    left: 20%;
+    filter: blur(2px);
+    animation-name: anime-k1 ;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+
+
+@keyframes anime-k1 { 
+    from{
+        transform: translate(-8%,-4%) ;
+    
+    }
+    to{
+        transform: translate(-20%,-23%);
+    }
+     
+    
+}
+
+@keyframes gola { 
+    from{
+        transform: translate(0%,0%) skewX(10deg) skewY();
+        filter: blur(10px);
+    }
+    to{
+        transform: translate(0%,30%) scaleY(9deg) scaleX(4deg);
+        filter: blur(50px);
+
+    }
+    
+}
+
+#page3{
+     min-height: 70vh;
+    width: 100%;
+    background-color: #8ecae6;
+    padding: 4vw 0;
+    
+
+}
+.elem{
+    height: 150px;
+    width: 100%;
+   
+    border-bottom: 1px solid #023047;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+
+}
+.elem h2{
+    font-size: 3vw;
+    position: relative;
+    z-index: 9;
+    color: #023047;
+}
+.elem .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #fb8500;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.4s ;
+
+}
+.elem:hover .overlay{
+    top: 0%;
+}
+
+#fixed-image{
+    height: 30vw;
+    width: 24vw;
+    
+    border-radius: 10px;
+    position: fixed;
+    z-index: 99;
+    left: 50% ;
+    top: 25%;
+    display: none;
+    background-size: cover;
+
+}
+#page4{
+    min-height: 60vh;
+    width: 100%;
+    background-color: #8ecae6;
+    position: relative;
+    
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+
+    
+    
+
+}
+#about{
+    
+    width: 100%;
+    height: 35vw;
+    background-color: #219ebc;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    
+   
+    
+    
+}
+#blackText{
+    width: 40%;
+    height: 100%;
+    padding: 3vw;
+
+}
+#abutimage{
+    width: 60%;
+    height: 100%;
+    background-image: url(swamiji.jpg);
+    background-size: cover;
+    border-radius: 25px;
+
+}
+#blackText h1 {
+    color: #023047;
+    font-size: 2vw;
+    
+
+}
+#blackText p {
+    font-size: 0.9vw;
+    font-weight: 800;
+    color: #023047;
+    margin: 1vw;
+
+}
+#blackText button {
+    height: 3.5vw;
+    width: 12vw;
+    background-color: #e68413;
+    color: #fff;
+   border: none;
+    border-radius: 23px;
+    right: -24%;
+    position: relative;
+}
+#page5{
+    height: 70vh;
+    width: 100%;
+    background-color: #8ecae6;
+    padding: 2vw;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-slide {
+    width: 60%;
+  }
+
+  
+
+
+
+#page6{
+    height: 90vh;
+    width: 100%;
+    
+}
+
+
+#footer{
+    position: fixed;
+    z-index: 9;
+    height: 100vh;
+    width: 100%;
+    background-color: #6a040f;
+    color: #fff;
+   bottom: 0;
+   display: flex;
+   
+   justify-content: flex-end;
+   flex-direction: column;
+   
+}
+#footer h1{
+    font-size: 12.6vw;
+}
+#footer-div{
+    height: 20vh;
+    height: 100%;
+    
+    background-image: url(swami2ji.jpg);
+    background-size: cover;
+}
+#footer-bottom{
+    border-top: 1px solid #fff;
+    height: 10vh;
+    width: 100%;
+    
+}
+#full-scr{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.559);
+    position: fixed;
+    z-index: 99;
+    top: -100%;
+    transition: all ease 0.4s;
+}
+#full-div1{
+    height: 50%;
+    width: 100%;
+    background-color: #8ecae6;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+}
+
+@media  (max-width:600px) {
+    #page1{
+        min-height: 100vh;
+        width: 100vw;
+        padding: 0vw;
+    }
+      
+    
+    nav{
+       
+       padding: 8vw 5vw ;
+       background-color: #8ecae6;
+     
+      
+    
+    
+    }
+    #navlogo{
+        height: 100px;
+        width: 150px;
+    }
+    #logo{
+        height: 17vw;
+        width: 35vw;
+        background-size: cover;
+        background-image: url(logo.png);
+        transition: all ease 0.4s;
+    }
+    #nav-part2{
+       
+        display: none;
+    
+    }
+    nav h3{
+        display: block;
+        padding: 3vw 5vw;
+        border: 1px solid black;
+        border-radius: 50px;
+        font-size: 4vw;
+        font-weight: 200;
+        padding-left: 10vw;
+    }
+    #center{
+        height: 51vh ;
+        width: 100%;
+        /*background-color: #fb8500;*/
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        border-bottom: 1px solid #0000003c ;
+        padding-bottom: 10vw ;
+        z-index: +10 ;
+        flex-direction: column-reverse;
+        padding: 5vw 5vw ;
+        position: relative;
+        z-index: 9;
+    }
+    #left h3{
+        width: 91vw;
+        font-size: 3.9vw;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         line-height: 6vw;
+         color: #023047;
+         text-transform: uppercase;
+    }
+    #center h1{
+            font-size: 16vw;
+            text-align: right;
+            line-height: 15vw;
+            color: #023047;
+            position: relative ;
+            z-index: +1 ;
+           
+            
+    } 
+    #page1 video {
+        position: relative;
+        border-radius: 15px;
+        height: 70vh;
+        object-fit: cover;
+        object-position: center;
+        width: 92%;
+       margin-top: 4vw;  
+       margin-left: 4%;
+    }
+    #hero-shape{
+        position: absolute;
+        width: 82vw ;
+        height: 56vw;
+        background-color: #eae2b7 ;
+        /*background-image: url(mahadev.png);*/
+        /*background-size: cover;*/
+        border-top-left-radius: 50% ;
+        right: 0;
+        top: 65vh;
+        filter: blur(7px);
+        opacity: 50;
+    }
+   #page2{
+    min-height: 100vh; 
+    width: 100%;
+    background-color: #8ecae6;
+    padding: 8vw 0 ;
+    position: relative;
+     }
+#moving-text{
+    overflow-x: auto;
+    white-space: nowrap;
+     }
+#moving-text::-webkit-scrollbar{
+    display: none;
+
+}
+.con{
+    
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+
+}
+#moving-text h1{
+    font-size: 15vw;
+    display: inline-block;
+    color: #023047;
+}
+#gola{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #ffb703;
+    display: inline-block;
+    margin: 2vw 2vw ;
+
+}
+#page2-bottom{
+    height: 90vh; 
+    width: 100%;
+    
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 3vh ;
+    position: relative;
+    z-index: 9;
+}
+
+#img{
+    height: 40%;
+    width: 100%;
+    background-image: url(krishna.jpg);
+    background-size: cover;
+   border-radius: 10px;
+    
+   
+}
+#textp{
+    height: 30vh;
+    width: 100%;
+    
+    
+}
+#krishna{
+    padding-top: 3vw;
+    font-size: 4.5vw;
+
+    text-align: right; 
+    font-weight:200 ;
+}
+#page2-bottom h1 {
+
+    font-size: 4vw;
+    line-height: 7vw;
+    width: 100%;
+    margin-right: 0vh;
+    margin-top: 3vw;
+    color: #023047;
+   
+}
+#page2-bottom h1 br{
+    display: none;
+}
+#bottom-part2 {
+    display: flex;
+    width: 70%;
+}
+#gooey {
+    height: 62vw;
+    width: 62vw;
+    position: absolute ;
+    border-radius: 50%;
+  
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    top: 47%;
+    left: 15%;
+    
+   
+
+}
+
+#gooey2{
+    opacity: 0.5;
+    height: 70%;
+    width: 70%;
+    position: absolute ;
+    border-radius: 50%;
+   background-image: linear-gradient(to top,#ffb703,#d00000 );
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    top: 47%;
+    left: 15%;
+    
+    animation-name: gola ;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite
+
+}
+
+
+
+#gooey1{
+   
+
+      height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    position: absolute ;
+    border-radius: 50%;
+    background-image: url(krishna.png);
+    background-size: cover;
+    top: 12%;
+    left: 20%;
+    filter: blur(2px);
+    animation-name: anime-k1 ;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+}
+
+   
+
+ #loader{
+    height: 100%;
+    width: 100%;
+    background-color: #E9EdC9;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+     transition: all linear 0.3s ;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+#loader h1{
+    color: transparent;
+  font-size: 8vw;
+   background: linear-gradient(to right,#8338ec,#fb5607);
+   -webkit-background-clip: text ;
+   position: absolute;
+   opacity: 0;
+}
+#loader h1:nth-child(1){
+    animation-name: load;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+
+
+}
+#loader h1:nth-child(2){
+    animation-name: load;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+
+}
+#loader h1:nth-child(3){
+    animation-name: load;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+
+}
+#loader h1:nth-child(4){
+    animation-name: load;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-timing-function: linear;
+
+}
+#loader h1:nth-child(5){
+    animation-name: load;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    animation-timing-function: linear;
+
+}
+@keyframes load {
+    0%{
+        opacity: 0;
+
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+
+    }
+
+}
+@media (max-width:600px){
+    #page3{
+        display: none;
+        min-height: 40vh;
+       width: 100%;
+       background-color: #8ecae6;
+       padding: 4vw 0;
+       
+   
+   }
+   .elem{
+       height: 37px;
+       width: 100%;
+      
+       border-bottom: 1px solid #023047;
+       position: relative;
+       overflow: hidden;
+       display: flex;
+       align-items: center;
+       padding: 0 2vw;
+   
+   }
+   .elem h2{
+       font-size: 3vw;
+       position: relative;
+       z-index: 9;
+       color: #023047;
+   }
+   .elem .overlay{
+       height: 100%;
+       width: 100%;
+       background-color: #fb8500;
+       position: absolute;
+       left: 0;
+       top: -100%;
+       transition: all ease 0.4s ;
+   
+   }
+   .elem:hover .overlay{
+       top: 0%;
+   }
+   
+   #fixed-image{
+       height: 30vw;
+       width: 25vw;
+       
+       border-radius: 10px;
+       position: fixed;
+       z-index: 99;
+       left: 50% ;
+       top: 25%;
+       display: none;
+       background-size: cover;
+   
+   }
+   #page4{
+    min-height: 40vh;
+    width: 100%;
+    background-color: #8ecae6;
+    position: relative;
+    
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+
+    
+    
+
+}
+#about{
+    
+    width: 100%;
+    height: 56vh;
+    background-color: #219ebc;;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    
+   
+    
+    
+}
+#blackText{
+    width: 50%;
+    height: 100%;
+    padding: 3vh;
+
+}
+#abutimage{
+    width: 50%;
+    height: 100%;
+    background-image: url(swamiji.webp);
+    background-size: cover;
+    border-radius: 25px;
+
+}
+#blackText h1 {
+    color: #023047;
+    font-size: 2.5vh;
+    
+
+}
+#blackText p {
+    font-size: 1.04vh;
+    font-weight: 800;
+    color: #023047;
+    margin: 1vw;
+
+}
+
+}
+#blackText button {
+    height: 9vw;
+    width: 35vw;
+    background-color: #e68413;
+    color: #fff;
+    left: 4px;
+    margin-top: 0.2vw;
+   border: none;
+    border-radius: 10px;
+    position: relative;
+   
+}
